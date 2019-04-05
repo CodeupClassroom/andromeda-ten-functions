@@ -46,7 +46,7 @@ function addOne(a) {
 }
 function isEven(b) {
     var num = +b;
-    if (num === true || num === undefined || isNaN(num) || num === false){
+    if (num === "boolean" || num === undefined || isNaN(num)){
         return false;
     } else if (num % 2 === 0){
         return true
