@@ -20,3 +20,13 @@
  * and
  * concat
  */
+function isTrue(x) {
+
+   return x === true;
+}
+
+function isFalse(horse) {
+
+    return horse === false;
+}
+
