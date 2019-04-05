@@ -45,14 +45,9 @@ function addOne(a) {
     }
 }
 function isEven(b) {
-    var num = +b;
-    if (num === "boolean" || num === undefined || isNaN(num)){
-        return false;
-    } else if (num % 2 === 0){
-        return true
-    } else {
-        return false;
-    }
+    var num = parseInt(b);
+    return num % 2 === 0;
+
 }
 function isIdentical(c, d) {
     if (c === d){
