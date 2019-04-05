@@ -15,29 +15,29 @@
  */
  
 
-const randomBoolean = Boolean(Math.round(Math.random()))
-const randomNumber = Math.ceil(Math.random() * 100)
+const randomBoolean = Boolean(Math.round(Math.random()));
+const randomNumber = Math.ceil(Math.random() * 100);
 
 describe('concat', () => {
   it('should be a defined function', () => {
     expect(typeof concat).toBe('function');
-  })
+  });
   it('should return a string when passed to strings', () => {
-    expect(typeof concat("hello", "world")).toBe('string')
-  })
+    expect(typeof concat("hello", "world")).toBe('string');
+  });
   it('should return "helloworld" when passed "hello" and "world" as the two inputs.', () => {
     expect(concat("hello", "world")).toBe("helloworld");
-  })
+  });
   it('should return "Codeup" when passed "Code" and "up" as the two inputs', () => {
-    expect(concat("Code", "up")).toBe("Codeup")
-  })
+    expect(concat("Code", "up")).toBe("Codeup");
+  });
   it('should return "42" when passed the number 4 and 2, treating each input as a string', () => {
-    expect(concat(4, 2)).toBe("42")
-  })
+    expect(concat(4, 2)).toBe("42");
+  });
   it('should return "truetrue" when passed true and true', () => {
-    expect(concat(true, true)).toBe("truetrue")
-  })
-}) 
+    expect(concat(true, true)).toBe("truetrue");
+  });
+});
 
 describe('and', () => {
   it('should be a defined function', () => {
@@ -177,29 +177,29 @@ describe('addOne', () => {
 describe('isFalse', () => {
   it('should be a defined function', () => {
     expect(typeof isFalse).toBe('function');
-  })
+  });
   it('should return a boolean when passed any value', () => {
     expect(typeof isFalse(randomBoolean)).toBe('boolean')
-  })
+  });
   it('should return true when passed the value of false', () => {
     expect(isFalse(false)).toBe(true)
-  })
+  });
   it('should return false when passed true', () => {
     expect(isFalse(true)).toBe(false)
-  })
+  });
   it('should return false when passed undefined', () => {
     expect(isFalse(undefined)).toBe(false)
-  })
+  });
   it('should return false when passed null', () => {
     expect(isFalse(null)).toBe(false)
-  })
+  });
   it('should return false when passed the number ' + randomNumber, () => {
     expect(isFalse(randomNumber)).toBe(false)
-  })
+  });
   it('should return false when passed any string', () => {
     expect(isFalse("hello world")).toBe(false)
-  })
-})
+  });
+});
 
 describe('not', () => {
   it('should be a defined function', () => {
@@ -240,21 +240,21 @@ describe('not', () => {
 
 describe('isTrue', () => {
   it('should be a defined function', () => {
-    expect(typeof isTrue).toBe('function')
-  })
+    expect(typeof isTrue).toBe('function');
+  });
   it('should return a boolean value', () => {
-    expect(typeof isTrue(randomBoolean)).toBe('boolean')
-  })
+    expect(typeof isTrue(randomBoolean)).toBe('boolean');
+  });
   it('should return true when passed the boolean true', () => {
-    expect(isTrue(true)).toBe(true)
-  })
+    expect(isTrue(true)).toBe(true);
+  });
   it('should return false when passed the boolean false as the input', () => {
-    expect(isTrue(false)).toBe(false)
-  })
+    expect(isTrue(false)).toBe(false);
+  });
   it('should return false when passed a number as the input', () => {
     expect(isTrue(randomNumber)).toBe(false);
-  })
+  });
   it('should return false when passed a string as input', () => {
     expect(isTrue("hello world")).toBe(false);
-  })
-})
+  });
+});

@@ -20,3 +20,84 @@
  * and
  * concat
  */
+
+
+function isTrue(randomBoolean) {
+    if (randomBoolean === true) {
+        return true;
+    } else if (randomBoolean === false) {
+        return false;
+    } else if (randomBoolean > 0) {
+        return false;
+    } else if (randomBoolean === "");
+        return false;
+}
+
+isTrue();
+
+
+
+function isFalse(randomBoolean) {
+    if (randomBoolean === false) {
+        return true;
+    } else if (randomBoolean === true) {
+        return false;
+    } else if (randomBoolean === undefined) {
+        return false;
+    } else if (randomBoolean === null) {
+        return false;
+    } else if (randomBoolean > 0) {
+        return false;
+    } else if (randomBoolean === "") {
+        return false;
+    } else if (randomBoolean === "hello world") {
+        return false;
+    }
+}
+
+
+function not(x) {
+    return !x;
+}
+
+
+function addOne(x) { //come back to shore this up
+    return parseFloat(x) + 1;
+}
+
+
+function isEven(randomNumber) {
+    if (randomNumber % 2 === 0) {
+        return true;
+        } else {
+            return false;
+        }
+}
+
+
+function isIdentical (x, y) {
+    return x === y;
+}
+
+
+function isEqual(x, y) {
+    return x == y;
+}
+
+isEqual(5, "5");
+
+
+
+function and(x, y) {
+   return x && y;
+}
+
+
+
+function concat(x, y) {
+    return String(x) + String(y); //x.toString();
+}
+
+function or (x, y) {
+    return x || y;
+}
