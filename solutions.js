@@ -20,3 +20,49 @@
  * and
  * concat
  */
+function isTrue(a) {
+   return a === true;
+}
+
+function isFalse(a){
+    return a === false;
+}
+//Needs work
+function not(a){
+    return !a;
+}
+//will this return NaN?
+function addOne(a) {
+    return parseInt(a) + 1;
+}
+
+function isEven(a){
+
+    if (parseInt(a) % 2 === 0){
+        return true;
+    } else if (a === false){
+        return false;
+    } else {
+        return false;
+    }
+}
+
+function isIdentical (a,b) {
+    return a === b;
+}
+
+function isEqual (a,b) {
+    return a == b;
+}
+
+function or (a,b) {
+    return a || b;
+}
+
+function and (a,b) {
+    return a && b;
+}
+
+function concat (a,b) {
+    return "" + a + b;
+}
