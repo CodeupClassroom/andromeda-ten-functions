@@ -20,3 +20,86 @@
  * and
  * concat
  */
+
+/* 1. isTrue */
+
+function isTrue(input) {
+    if (input === true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* 2. isFalse */
+
+function isFalse(input) {
+    if (input === false) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* 3. not */
+
+function not(input) {
+    return !input;
+}
+
+/* 4. addOne */
+
+function addOne(input) {
+    return parseFloat(input) + 1;
+}
+
+/* 5. isEven */
+
+function isEven(input) {
+    if (parseFloat(input) % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* 6. isIdentical */
+
+function isIdentical(a, b) {
+    if (a === b) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* 7. isEqual */
+
+function isEqual (a, b) {
+    if (a == b) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/* 8. or */
+
+function or (a, b) {
+
+        return a || b
+}
+
+/* 9. and */
+
+function and(a, b) {
+
+        return a && b;
+
+}
+
+/* 10. concat */
+
+function concat(a, b) {
+    return a.toString() + b.toString();
+}
